@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
 int	ft_atoi(const char *str)
 {
 	int result;
@@ -27,11 +29,11 @@ int	ft_atoi(const char *str)
 		if (*str >= '0' && *str <= '9')
 		{
 			result += (*str - 48);
-				str++;
+			str++;
 		}
 		else
-			return (result/10*neg);
+			return (result / 10 * neg);
 		result *= 10;
 	}
-	return (result/10*neg);
+	return (result / 10 * neg);
 }
